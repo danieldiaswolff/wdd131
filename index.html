@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica por Daniel Dias Wolff. Página inicial do curso com perfil, hobbies e recursos de desenvolvimento web.">
+  <title>WDD 131 – Fundamentos da Web Dinâmica - Daniel Dias Wolff</title>
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script src="scripts/obterdatas.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>WDD 131 – Fundamentos da Web Dinâmica</h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/danieldiaswolff/" target="_blank">Linkedin</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7"
+        target="_blank">Escritura</a>
+      <a href="#">Projeto Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Daniel Dias Wolff</h1>
+
+    <section class="card">
+      <h2>Sobre Mim</h2>
+      <div class="card-content">
+        <div class="about-top">
+          <p>
+            Sou estudante de desenvolvimento web na BYU-Idaho, com interesse em HTML, CSS e
+            JavaScript. Busco aplicar boas práticas de design e criar experiências acessíveis na web.
+          </p>
+          <img src="imagens/perfil.jpg" alt="Foto de Daniel Dias Wolff" width="150" height="150">
+        </div>
+
+        <h3>Brasília, Brasil</h3>
+        <hr>
+
+        <div class="about-bottom">
+          <figure>
+            <img src="imagens/brandeira-do-brasil.jpg" alt="Bandeira do Brasil" width="120" height="84">
+            <figcaption>Bandeira Oficial do Brasil</figcaption>
+          </figure>
+          <p>
+            O Brasil é o maior país da América do Sul, conhecido por sua diversidade cultural,
+            floresta amazônica e belas praias. O português é o idioma oficial e a capital é Brasília.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Recursos Web Dev</h2>
+      <div class="card-content">
+        <ul>
+          <li><a href="https://dev.to/" target="_blank">Comunidade Dev.to</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank">Revista Smashing</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+          <li><a href="https://picsum.photos/" target="_blank">Imagem de Espaço Reservado Lorem Picsum</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©<span id="anoatual"></span> Daniel Dias Wolff • Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>

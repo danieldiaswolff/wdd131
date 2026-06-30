@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Código">
+  <rect width="160" height="160" rx="12" fill="#1a4d6d"/>
+  <text x="24" y="52" fill="#e8a838" font-family="monospace" font-size="18">&lt;html&gt;</text>
+  <text x="36" y="78" fill="#7ec8e3" font-family="monospace" font-size="16">&lt;body&gt;</text>
+  <text x="48" y="104" fill="#fff" font-family="monospace" font-size="14">Hello Web!</text>
+  <text x="36" y="130" fill="#7ec8e3" font-family="monospace" font-size="16">&lt;/body&gt;</text>
+</svg>
