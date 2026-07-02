@@ -27,7 +27,7 @@ header {
   text-align: center;
 }
 
-.course-title {
+#course-title {
   display: block;
   font-family: "Merriweather", serif;
   font-size: 1.5rem;
