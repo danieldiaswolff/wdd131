@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #4a3068;
+  --cor-secundaria: #d4b8f0;
+  --cor-fundo: #f5f0e8;
+  --cor-texto: #1e2a32;
+  --cor-cartao: #ffffff;
+  --cor-borda: #d4cfc4;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 0.85rem 1.25rem;
+}
+
+.header-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.menu-btn {
+  display: block;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.35rem 0.55rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+  padding-top: 0.5rem;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+
+main {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  font-family: "Cinzel", serif;
+  font-size: 1.75rem;
+  color: var(--cor-primaria);
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+figure {
+  background-color: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+footer p + p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Álbum de Templos</title>
+  <meta name="description" content="Álbum de imagens de templos da Igreja de Jesus Cristo dos Santos dos Últimos Dias.">
+  <meta name="author" content="Daniel Dias Wolff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/templos.css">
+  <link rel="stylesheet" href="estilos/templos-grandes.css">
+  <script src="scripts/templos.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-bar">
+      <span class="site-title">Album do Templo</span>
+      <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Abrir menu de navegação">☰</button>
+      <nav id="nav-menu">
+        <a href="index.html">Página Inicial</a>
+        <a href="#antigo">Antigo</a>
+        <a href="#novo">Novo</a>
+        <a href="#grande">Grande</a>
+        <a href="#pequeno">Pequeno</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Templos da Igreja</h1>
+
+    <figure id="antigo">
+      <img src="imagens/templos/templo.jpg" alt="Templo de Salt Lake" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Salt Lake</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/templos/templo2.jpg" alt="Templo de Nauvoo" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Nauvoo</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/templos/templo3.jpg" alt="Templo de Manti" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Manti</figcaption>
+    </figure>
+    <figure id="grande">
+      <img src="imagens/templos/templo.jpg" alt="Templo de São Paulo" width="400" height="280" loading="lazy">
+      <figcaption>Templo de São Paulo</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/templos/templo2.jpg" alt="Templo de Jordan River" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Jordan River</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/templos/templo3.jpg" alt="Templo de Hong Kong" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Hong Kong</figcaption>
+    </figure>
+    <figure id="novo">
+      <img src="imagens/templos/templo.jpg" alt="Templo de Brasília" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Brasília</figcaption>
+    </figure>
+    <figure>
+      <img src="imagens/templos/templo2.jpg" alt="Templo de Roma" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Roma</figcaption>
+    </figure>
+    <figure id="pequeno">
+      <img src="imagens/templos/templo3.jpg" alt="Templo de Colonia Juárez" width="400" height="280" loading="lazy">
+      <figcaption>Templo de Colonia Juárez</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="ano"></span> Daniel Dias Wolff - Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>
