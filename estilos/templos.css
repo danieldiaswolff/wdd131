@@ -11,6 +11,9 @@
   --cor-texto: #1e2a32;
   --cor-cartao: #ffffff;
   --cor-borda: #d4cfc4;
+  --card-width: 320px;
+  --card-image-height: 220px;
+  --card-caption-height: 3.25rem;
 }
 
 body {
@@ -93,6 +96,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
+  justify-items: center;
 }
 
 main h1 {
@@ -105,6 +109,11 @@ main h1 {
 }
 
 figure {
+  display: flex;
+  flex-direction: column;
+  width: var(--card-width);
+  max-width: 100%;
+  height: calc(var(--card-image-height) + var(--card-caption-height));
   background-color: var(--cor-cartao);
   border: 1px solid var(--cor-borda);
   border-radius: 8px;
@@ -115,11 +124,18 @@ figure {
 figure img {
   display: block;
   width: 100%;
-  height: auto;
+  height: var(--card-image-height);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 figcaption {
-  padding: 0.75rem 1rem;
+  flex-shrink: 0;
+  height: var(--card-caption-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
   font-weight: 700;
   text-align: center;
   background-color: var(--cor-primaria);
