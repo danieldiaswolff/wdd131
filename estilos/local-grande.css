@@ -1,0 +1,56 @@
+@media (min-width: 701px) {
+  header h1 {
+    font-size: 2.25rem;
+    padding: 0.5rem 0;
+  }
+
+  .hero {
+    position: relative;
+    min-height: 520px;
+  }
+
+  .hero > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    border-bottom: none;
+  }
+
+  .card {
+    position: absolute;
+    width: min(320px, 42%);
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .dados {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .clima {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .clima h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .clima h2::after {
+    content: "⛅";
+    font-size: 1.25rem;
+  }
+
+  .icone-clima-movel {
+    display: none;
+  }
+}

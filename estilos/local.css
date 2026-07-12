@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-verde: #009739;
+  --cor-amarelo: #ffdf00;
+  --cor-azul: #002776;
+  --cor-cabecalho: var(--cor-verde);
+  --cor-destaque: var(--cor-amarelo);
+  --cor-fundo: #f5f7f2;
+  --cor-texto: #1a1a1a;
+  --cor-cartao: #ffffff;
+  --cor-borda: #d4ddd4;
+  --cor-cabecalho-cartao: var(--cor-verde);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cor-cabecalho);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 4px solid var(--cor-destaque);
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--cor-destaque);
+}
+
+.card {
+  background-color: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  margin: 0;
+}
+
+.card h2 {
+  background-color: var(--cor-cabecalho-cartao);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+}
+
+.card dl {
+  padding: 1rem 1.25rem;
+}
+
+.card .item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.card .item:last-child {
+  border-bottom: none;
+}
+
+.card dt {
+  font-weight: 700;
+}
+
+.card dd {
+  text-align: right;
+}
+
+.clima h2::after {
+  content: none;
+}
+
+.icone-clima-movel {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0.75rem auto 0.25rem;
+}
+
+footer {
+  background-color: var(--cor-cabecalho);
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  margin-top: 0;
+  font-size: 0.95rem;
+}
+
+footer p + p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}

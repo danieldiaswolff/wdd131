@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description"
+    content="Página informativa sobre o Brasil com dados demográficos e informações climáticas. WDD 131 – Fundamentos da Web Dinâmica.">
+  <title>Brasil – WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/local.css">
+  <link rel="stylesheet" href="estilos/local-grande.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Brasil</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="imagens/local/brasil-pequeno.webp"
+        srcset="imagens/local/brasil-pequeno.webp 600w, imagens/local/brasil-grande.webp 1200w"
+        sizes="(max-width: 700px) 100vw, 1200px"
+        alt="Vista do Cristo Redentor no Rio de Janeiro, Brasil" width="600" height="450">
+
+      <section class="card dados">
+        <h2>Dados</h2>
+        <dl>
+          <div class="item">
+            <dt>Área:</dt>
+            <dd>8.515.767 km²</dd>
+          </div>
+          <div class="item">
+            <dt>População:</dt>
+            <dd>203.062.512</dd>
+          </div>
+          <div class="item">
+            <dt>Capital:</dt>
+            <dd>Brasília</dd>
+          </div>
+          <div class="item">
+            <dt>Idiomas:</dt>
+            <dd>Português</dd>
+          </div>
+          <div class="item">
+            <dt>Moeda:</dt>
+            <dd>Real Brasileiro (BRL)</dd>
+          </div>
+          <div class="item">
+            <dt>Fuso Horário:</dt>
+            <dd>UTC-3 a UTC-5</dd>
+          </div>
+          <div class="item">
+            <dt>Código Telefônico:</dt>
+            <dd>+55</dd>
+          </div>
+          <div class="item">
+            <dt>TLD da Internet:</dt>
+            <dd>.br</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card clima">
+        <h2>Clima</h2>
+        <img class="icone-clima-movel" src="imagens/local/icone-clima.svg" alt="Ícone de clima parcialmente nublado"
+          width="64" height="64">
+        <dl>
+          <div class="item">
+            <dt>Temperatura:</dt>
+            <dd><span id="temperatura">10</span> °C</dd>
+          </div>
+          <div class="item">
+            <dt>Condições:</dt>
+            <dd>Parcialmente Nublado</dd>
+          </div>
+          <div class="item">
+            <dt>Vento:</dt>
+            <dd><span id="vento">5</span> km/h</dd>
+          </div>
+          <div class="item">
+            <dt>Sensação Térmica:</dt>
+            <dd><span id="sensacaoTermica"></span></dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="ano"></span> Daniel Dias Wolff • Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>
