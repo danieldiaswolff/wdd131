@@ -6,15 +6,16 @@
 
 :root {
   --cor-verde: #009739;
+  --cor-verde-escuro: #007a30;
   --cor-amarelo: #ffdf00;
   --cor-azul: #002776;
-  --cor-cabecalho: var(--cor-verde);
+  --cor-cabecalho: var(--cor-verde-escuro);
   --cor-destaque: var(--cor-amarelo);
   --cor-fundo: #f5f7f2;
   --cor-texto: #1a1a1a;
   --cor-cartao: #ffffff;
   --cor-borda: #d4ddd4;
-  --cor-cabecalho-cartao: var(--cor-verde);
+  --cor-cabecalho-cartao: var(--cor-verde-escuro);
 }
 
 body {
@@ -119,5 +120,4 @@ footer {
 footer p + p {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  opacity: 0.9;
 }
