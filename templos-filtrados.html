@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Álbum de Templos Filtrados</title>
+  <meta name="description"
+    content="Álbum filtrável de templos da Igreja de Jesus Cristo dos Santos dos Últimos Dias, com cartões gerados dinamicamente.">
+  <meta name="author" content="Daniel Dias Wolff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/templos-filtrados.css">
+  <link rel="stylesheet" href="estilos/templos-filtrados-grande.css">
+  <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-bar">
+      <span class="site-title">Álbum do Templo</span>
+      <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Abrir menu de navegação">☰</button>
+      <nav id="nav-menu">
+        <a href="#" data-filtro="home">Home</a>
+        <a href="#" data-filtro="antigos">Antigos</a>
+        <a href="#" data-filtro="novos">Novos</a>
+        <a href="#" data-filtro="grandes">Grandes</a>
+        <a href="#" data-filtro="pequenos">Pequenos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Templos da Igreja</h1>
+    <div id="album-templos" class="album-templos"></div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="ano"></span> Daniel Dias Wolff - Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>
