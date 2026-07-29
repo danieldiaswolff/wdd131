@@ -8,10 +8,11 @@
   <meta name="description"
     content="Formulário de avaliação de produto da disciplina WDD 131. Envie classificação, data de instalação e comentários.">
   <title>Avaliação de Produto – WDD 131</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="estilos/formulario.css">
   <script src="scripts/obterdatas.js" defer></script>
@@ -24,37 +25,46 @@
   </header>
 
   <main>
+    <p class="intro">
+      Conte-nos o que achou do produto. Os campos marcados com
+      <span class="obrigatorio">*</span> são obrigatórios.
+    </p>
+
     <form method="get" action="review.html">
       <fieldset>
         <legend>Informações do Produto</legend>
 
-        <label for="produto">Nome do Produto<span class="obrigatorio">*</span></label>
-        <select id="produto" name="produto" required>
-          <option value="" disabled selected>Select a Product ...</option>
-        </select>
+        <div class="campo">
+          <label for="produto">Nome do Produto <span class="obrigatorio">*</span></label>
+          <select id="produto" name="produto" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
 
         <fieldset class="classificacao">
-          <legend>Classificação Geral<span class="obrigatorio">*</span></legend>
-          <div class="estrelas">
-            <input type="radio" id="nota5" name="classificacao" value="5" required>
-            <label for="nota5" title="5 estrelas">☆</label>
+          <legend>Classificação Geral <span class="obrigatorio">*</span></legend>
+          <div class="estrelas" role="radiogroup" aria-label="Classificação de 1 a 5 estrelas">
+            <input type="radio" id="nota5" name="classificacao" value="5" required aria-label="5 estrelas">
+            <label for="nota5"><span aria-hidden="true">★</span></label>
 
-            <input type="radio" id="nota4" name="classificacao" value="4" required>
-            <label for="nota4" title="4 estrelas">☆</label>
+            <input type="radio" id="nota4" name="classificacao" value="4" required aria-label="4 estrelas">
+            <label for="nota4"><span aria-hidden="true">★</span></label>
 
-            <input type="radio" id="nota3" name="classificacao" value="3" required>
-            <label for="nota3" title="3 estrelas">☆</label>
+            <input type="radio" id="nota3" name="classificacao" value="3" required aria-label="3 estrelas">
+            <label for="nota3"><span aria-hidden="true">★</span></label>
 
-            <input type="radio" id="nota2" name="classificacao" value="2" required>
-            <label for="nota2" title="2 estrelas">☆</label>
+            <input type="radio" id="nota2" name="classificacao" value="2" required aria-label="2 estrelas">
+            <label for="nota2"><span aria-hidden="true">★</span></label>
 
-            <input type="radio" id="nota1" name="classificacao" value="1" required>
-            <label for="nota1" title="1 estrela">☆</label>
+            <input type="radio" id="nota1" name="classificacao" value="1" required aria-label="1 estrela">
+            <label for="nota1"><span aria-hidden="true">★</span></label>
           </div>
         </fieldset>
 
-        <label for="data-instalacao">Data de Instalação<span class="obrigatorio">*</span></label>
-        <input type="date" id="data-instalacao" name="data-instalacao" required>
+        <div class="campo">
+          <label for="data-instalacao">Data de Instalação <span class="obrigatorio">*</span></label>
+          <input type="date" id="data-instalacao" name="data-instalacao" required>
+        </div>
       </fieldset>
 
       <fieldset>
@@ -82,12 +92,16 @@
       <fieldset>
         <legend>Sua Avaliação</legend>
 
-        <label for="avaliacao">Avaliação Escrita</label>
-        <textarea id="avaliacao" name="avaliacao" rows="5"
-          placeholder="Escreva sua opinião sobre o produto (opcional)."></textarea>
+        <div class="campo">
+          <label for="avaliacao">Avaliação Escrita</label>
+          <textarea id="avaliacao" name="avaliacao" rows="5"
+            placeholder="Escreva sua opinião sobre o produto (opcional)."></textarea>
+        </div>
 
-        <label for="usuario">Nome de Usuário</label>
-        <input type="text" id="usuario" name="usuario" placeholder="Seu nome (opcional)" autocomplete="nickname">
+        <div class="campo">
+          <label for="usuario">Nome de Usuário</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Seu nome (opcional)" autocomplete="nickname">
+        </div>
       </fieldset>
 
       <input type="submit" value="Enviar Avaliação">

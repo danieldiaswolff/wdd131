@@ -5,19 +5,21 @@
 }
 
 :root {
-  --cor-fundo: #eef3f1;
+  --cor-fundo: #e8efe9;
   --cor-superficie: #ffffff;
-  --cor-texto: #1f2d28;
-  --cor-primaria: #1f6b52;
-  --cor-destaque: #c9852a;
-  --cor-borda: #c5d5ce;
+  --cor-texto: #1a2621;
+  --cor-primaria: #145c45;
+  --cor-destaque: #8a4b00;
+  --cor-borda: #9fb5aa;
+  --cor-estrela: #4d6359;
   --fonte-titulo: "Outfit", sans-serif;
   --fonte-corpo: "Source Sans 3", sans-serif;
 }
 
 body {
   font-family: var(--fonte-corpo);
-  background: linear-gradient(160deg, #eef3f1 0%, #dce8e2 100%);
+  background-color: var(--cor-fundo);
+  background-image: linear-gradient(165deg, #e8efe9 0%, #d5e3db 100%);
   color: var(--cor-texto);
   line-height: 1.6;
   min-height: 100vh;
@@ -45,6 +47,16 @@ main {
   flex: 1;
 }
 
+.intro {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.obrigatorio {
+  color: #8b1e1e;
+  font-weight: 700;
+}
+
 form {
   background-color: var(--cor-superficie);
   border: 1px solid var(--cor-borda);
@@ -53,7 +65,7 @@ form {
 
 fieldset {
   border: 1px solid var(--cor-borda);
-  padding: 1rem;
+  padding: 1rem 1rem 1.15rem;
   margin-bottom: 1.25rem;
 }
 
@@ -61,24 +73,24 @@ legend {
   font-family: var(--fonte-titulo);
   font-weight: 700;
   color: var(--cor-primaria);
-  padding: 0 0.35rem;
+  padding: 0 0.4rem;
 }
 
-label {
+.campo {
+  margin-top: 0.85rem;
+}
+
+.campo label,
+fieldset > label {
   display: block;
-  font-weight: 600;
-  margin: 0.85rem 0 0.35rem;
-}
-
-.obrigatorio {
-  color: #a33b2b;
-  margin-left: 0.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
 }
 
 .ajuda {
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: #3d524a;
+  margin: 0.35rem 0 0.65rem;
+  color: #2f433b;
 }
 
 input[type="text"],
@@ -86,11 +98,11 @@ input[type="date"],
 select,
 textarea {
   width: 100%;
-  padding: 0.65rem 0.75rem;
+  padding: 0.7rem 0.75rem;
   border: 1px solid var(--cor-borda);
   font: inherit;
   color: var(--cor-texto);
-  background-color: #fbfdfc;
+  background-color: #f7fbf8;
 }
 
 textarea {
@@ -101,7 +113,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--cor-primaria);
+  outline: 3px solid var(--cor-primaria);
   outline-offset: 2px;
 }
 
@@ -113,8 +125,8 @@ textarea:focus {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  gap: 0.25rem;
-  margin-top: 0.5rem;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
 }
 
 .estrelas input {
@@ -129,12 +141,12 @@ textarea:focus {
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
-  color: #9bb0a6;
+  color: var(--cor-estrela);
 }
 
 .estrelas input:focus + label {
-  outline: 2px solid var(--cor-primaria);
-  outline-offset: 2px;
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 3px;
 }
 
 .estrelas label:hover,
@@ -146,8 +158,8 @@ textarea:focus {
 .opcao {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  margin: 0.45rem 0;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
 }
 
 .opcao label {
@@ -156,16 +168,16 @@ textarea:focus {
 }
 
 .opcao input {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.15rem;
+  height: 1.15rem;
   accent-color: var(--cor-primaria);
 }
 
 input[type="submit"] {
   display: block;
   width: 100%;
-  margin-top: 0.5rem;
-  padding: 0.85rem 1rem;
+  margin-top: 0.35rem;
+  padding: 0.9rem 1.1rem;
   border: none;
   background-color: var(--cor-destaque);
   color: #fff;
@@ -175,8 +187,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #b07220;
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #6e3c00;
+}
+
+input[type="submit"]:focus {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 3px;
 }
 
 .confirmacao {
@@ -188,26 +206,33 @@ input[type="submit"]:hover {
 
 .mensagem {
   font-family: var(--fonte-titulo);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--cor-primaria);
   margin-bottom: 1rem;
 }
 
 .contador {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .voltar {
   display: inline-block;
-  padding: 0.65rem 1.1rem;
+  padding: 0.7rem 1.2rem;
   background-color: var(--cor-primaria);
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.voltar:hover {
-  background-color: #185541;
+.voltar:hover,
+.voltar:focus {
+  background-color: #0f4634;
+}
+
+.voltar:focus {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 3px;
 }
 
 footer {
@@ -220,18 +245,18 @@ footer {
 
 @media (min-width: 640px) {
   h1 {
-    font-size: 2.15rem;
+    font-size: 2.2rem;
   }
 
   form,
   .confirmacao {
-    padding: 1.75rem;
+    padding: 1.85rem;
   }
 
   input[type="submit"] {
     width: auto;
-    min-width: 220px;
+    min-width: 240px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
   }
 }
