@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Logotipo Amigo Fiel</title>
+  <circle cx="60" cy="60" r="58" fill="#246b4e"/>
+  <ellipse cx="38" cy="38" rx="12" ry="16" fill="#f4c95f" transform="rotate(-20 38 38)"/>
+  <ellipse cx="82" cy="38" rx="12" ry="16" fill="#f4c95f" transform="rotate(20 82 38)"/>
+  <ellipse cx="28" cy="62" rx="10" ry="14" fill="#f4c95f" transform="rotate(-35 28 62)"/>
+  <ellipse cx="92" cy="62" rx="10" ry="14" fill="#f4c95f" transform="rotate(35 92 62)"/>
+  <ellipse cx="60" cy="68" rx="22" ry="20" fill="#f4c95f"/>
+</svg>

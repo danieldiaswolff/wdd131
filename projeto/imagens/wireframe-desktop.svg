@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="wfDesktopTitle">
+  <title id="wfDesktopTitle">Wireframe da página inicial em visualização desktop</title>
+  <rect width="720" height="420" fill="#f0f4f2" stroke="#246b4e" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="10" y="10" width="700" height="45" fill="#246b4e" rx="4"/>
+  <text x="80" y="38" fill="#fff" font-family="sans-serif" font-size="13">Logo</text>
+  <text x="520" y="38" fill="#fff" font-family="sans-serif" font-size="12">Home | Serviços | Contato</text>
+  <!-- Hero full width -->
+  <rect x="10" y="65" width="700" height="140" fill="#c8ddd4" stroke="#246b4e" stroke-width="1"/>
+  <text x="360" y="120" text-anchor="middle" fill="#246b4e" font-family="sans-serif" font-size="16">Hero / Imagem principal</text>
+  <rect x="260" y="145" width="200" height="16" fill="#9bb8ab" rx="2"/>
+  <rect x="300" y="170" width="120" height="28" fill="#c9852a" rx="4"/>
+  <text x="360" y="188" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="11">CTA</text>
+  <!-- Destaques em linha -->
+  <rect x="10" y="220" width="700" height="14" fill="#9bb8ab" rx="2"/>
+  <rect x="10" y="245" width="225" height="100" fill="#d5e6de" stroke="#246b4e" stroke-width="1"/>
+  <rect x="247" y="245" width="225" height="100" fill="#d5e6de" stroke="#246b4e" stroke-width="1"/>
+  <rect x="485" y="245" width="225" height="100" fill="#d5e6de" stroke="#246b4e" stroke-width="1"/>
+  <text x="122" y="300" text-anchor="middle" fill="#246b4e" font-family="sans-serif" font-size="12">Destaque 1</text>
+  <text x="360" y="300" text-anchor="middle" fill="#246b4e" font-family="sans-serif" font-size="12">Destaque 2</text>
+  <text x="597" y="300" text-anchor="middle" fill="#246b4e" font-family="sans-serif" font-size="12">Destaque 3</text>
+  <!-- Footer -->
+  <rect x="10" y="360" width="700" height="50" fill="#246b4e" rx="4"/>
+  <text x="360" y="390" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13">Rodapé / Referências</text>
+</svg>
