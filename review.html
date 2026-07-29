@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description"
+    content="Confirmação de envio da avaliação de produto. Exibe o total de avaliações concluídas.">
+  <title>Avaliação Enviada – WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <script src="scripts/obterdatas.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Avaliação Enviada</h1>
+  </header>
+
+  <main class="confirmacao">
+    <p class="mensagem">Obrigado! Sua avaliação foi registrada com sucesso.</p>
+    <p class="contador">
+      Você concluiu <strong id="contador-avaliacoes">0</strong> avaliação(ões) neste navegador.
+    </p>
+    <p><a class="voltar" href="formulario.html">Enviar outra avaliação</a></p>
+  </main>
+
+  <footer>
+    <p>©<span id="anoatual"></span> Daniel Dias Wolff • Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>
