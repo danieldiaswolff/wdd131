@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description"
+    content="Agende banho, tosa ou tire dúvidas com o Pet Shop Amigo Fiel em Brasília pelo formulário de contato.">
+  <title>Contato e Agendamento | Pet Shop Amigo Fiel</title>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="stylesheet" href="estilos/grande.css">
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/contato.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="barra">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo-amigo-fiel.svg" width="48" height="48" alt="">
+        <span>Amigo Fiel</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav-principal"
+        aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburguer" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="secao">
+    <h1>Contato e agendamento</h1>
+    <p class="intro">
+      Envie sua solicitação para dúvidas ou reserva de horário. Os campos marcados com
+      <span class="obrigatorio">*</span> são obrigatórios.
+    </p>
+
+    <form class="formulario" id="form-contato" method="get" action="confirmacao.html">
+      <fieldset>
+        <legend>Seus dados</legend>
+
+        <div class="campo">
+          <label for="nome">Nome completo <span class="obrigatorio">*</span></label>
+          <input type="text" id="nome" name="nome" required autocomplete="name" maxlength="80">
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail <span class="obrigatorio">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email" maxlength="100">
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone <span class="obrigatorio">*</span></label>
+          <input type="tel" id="telefone" name="telefone" required autocomplete="tel"
+            placeholder="(61) 90000-0000" maxlength="20">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sobre o atendimento</legend>
+
+        <div class="campo">
+          <label for="assunto">Assunto <span class="obrigatorio">*</span></label>
+          <select id="assunto" name="assunto" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="data-preferida">Data preferida</label>
+          <input type="date" id="data-preferida" name="data-preferida">
+        </div>
+
+        <div class="campo">
+          <label for="pet">Nome do pet</label>
+          <input type="text" id="pet" name="pet" maxlength="40">
+        </div>
+
+        <p class="ajuda">Tipo de animal (marque o que se aplica):</p>
+        <div class="opcao">
+          <input type="checkbox" id="cao" name="animal" value="cao">
+          <label for="cao">Cão</label>
+        </div>
+        <div class="opcao">
+          <input type="checkbox" id="gato" name="animal" value="gato">
+          <label for="gato">Gato</label>
+        </div>
+        <div class="opcao">
+          <input type="checkbox" id="outro" name="animal" value="outro">
+          <label for="outro">Outro</label>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem <span class="obrigatorio">*</span></label>
+          <textarea id="mensagem" name="mensagem" rows="5" required maxlength="500"
+            placeholder="Conte o porte do pet, horário desejado ou sua dúvida."></textarea>
+        </div>
+      </fieldset>
+
+      <button class="botao" type="submit">Enviar solicitação</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rodape-interno">
+      <div class="rodape-info">
+        <p>&copy; 2026 Daniel Dias Wolff · Pet Shop Amigo Fiel</p>
+        <p>Última atualização: 3 de agosto de 2026</p>
+      </div>
+      <p><a href="referencias.html" target="_blank" rel="noopener noreferrer">Referências de imagens e textos</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>

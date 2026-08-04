@@ -1,0 +1,90 @@
+@media screen and (min-width: 40rem) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .barra {
+    flex-wrap: nowrap;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .nav-principal {
+    display: block;
+    flex-basis: auto;
+    width: auto;
+    margin-left: auto;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .nav-principal.aberto {
+    display: block;
+  }
+
+  .nav-principal ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .nav-principal a {
+    border-top: none;
+    padding: 0.55rem 0.85rem;
+    border-radius: var(--raio);
+  }
+
+  .nav-principal a[aria-current="page"] {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .marca span {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    min-height: 78vh;
+    align-items: center;
+  }
+
+  .hero-conteudo {
+    padding: 4rem 1.5rem;
+  }
+
+  .destaques {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  .info-loja {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .lista-servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secao {
+    padding: 3rem 1.5rem;
+  }
+
+  .formulario {
+    padding: 2rem;
+  }
+
+  .site-footer .rodape-interno {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .lista-servicos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

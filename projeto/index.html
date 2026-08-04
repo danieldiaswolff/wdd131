@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description"
+    content="Pet Shop Amigo Fiel em Brasília: banho, tosa, produtos e atendimento próximo para tutores e seus pets.">
+  <title>Pet Shop Amigo Fiel | Início</title>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="stylesheet" href="estilos/grande.css">
+  <script src="scripts/navegacao.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="barra">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo-amigo-fiel.svg" width="48" height="48" alt="">
+        <span>Amigo Fiel</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav-principal"
+        aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburguer" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-label="Apresentação">
+      <img class="hero-imagem" src="imagens/hero-pequeno.webp"
+        srcset="imagens/hero-pequeno.webp 640w, imagens/hero-grande.webp 1200w"
+        sizes="100vw"
+        width="1200" height="800"
+        alt="Cachorro caramelo deitado em gramado iluminado pelo sol">
+      <div class="hero-conteudo">
+        <h1 class="marca-hero">Amigo Fiel</h1>
+        <p>Cuidado diário, banho, tosa e produtos selecionados para o seu pet em Brasília.</p>
+        <a class="botao" href="contato.html">Agendar atendimento</a>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>O que oferecemos</h2>
+      <p class="intro">
+        Atendemos tutores que buscam um pet shop próximo, com horário flexível e
+        orientação clara sobre produtos e serviços.
+      </p>
+      <div class="destaques">
+        <article class="destaque">
+          <img src="imagens/banho-tosa.webp" width="800" height="1200" loading="lazy"
+            alt="Cachorro sentado em banheira após o banho">
+          <h3>Banho e tosa</h3>
+          <p>Serviços com produtos suaves e atenção ao temperamento de cada animal.</p>
+        </article>
+        <article class="destaque">
+          <img src="imagens/produtos.webp" width="800" height="1199" loading="lazy"
+            alt="Cachorro ao lado de prateleira com rações e acessórios">
+          <h3>Produtos</h3>
+          <p>Ração, brinquedos e acessórios escolhidos para o dia a dia do seu pet.</p>
+        </article>
+        <article class="destaque">
+          <img src="imagens/consulta.webp" width="800" height="533" loading="lazy"
+            alt="Veterinário examinando um cachorro em consultório">
+          <h3>Orientação</h3>
+          <p>Tire dúvidas sobre higiene, alimentação e rotina de cuidados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="info-loja">
+        <div>
+          <h2>Visite a loja</h2>
+          <p>
+            Estamos em Brasília, com atendimento presencial e agendamento online
+            para reduzir a espera no balcão.
+          </p>
+        </div>
+        <dl>
+          <div>
+            <dt>Endereço</dt>
+            <dd>Quadra Comercial Sul, Brasília — DF</dd>
+          </div>
+          <div>
+            <dt>Horário</dt>
+            <dd>Segunda a sábado, das 9h às 19h</dd>
+          </div>
+          <div>
+            <dt>Telefone</dt>
+            <dd>(61) 3000-0000</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rodape-interno">
+      <div class="rodape-info">
+        <p>&copy; 2026 Daniel Dias Wolff · Pet Shop Amigo Fiel</p>
+        <p>Última atualização: 3 de agosto de 2026</p>
+      </div>
+      <p><a href="referencias.html" target="_blank" rel="noopener noreferrer">Referências de imagens e textos</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Dias Wolff">
+  <meta name="description"
+    content="Confira serviços de banho e tosa e produtos do Pet Shop Amigo Fiel em Brasília, com preços e duração.">
+  <title>Serviços e Produtos | Pet Shop Amigo Fiel</title>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="stylesheet" href="estilos/grande.css">
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/servicos.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="barra">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo-amigo-fiel.svg" width="48" height="48" alt="">
+        <span>Amigo Fiel</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav-principal"
+        aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburguer" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <nav class="nav-principal" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html" aria-current="page">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="secao">
+    <h1>Serviços e produtos</h1>
+    <p class="intro">
+      Filtre por categoria para encontrar banho, tosa, orientação e itens de prateleira.
+      Os valores são referência e podem variar conforme o porte do animal.
+    </p>
+
+    <div class="filtros" role="group" aria-label="Filtrar por categoria">
+      <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button class="filtro" type="button" data-filtro="servico" aria-pressed="false">Serviços</button>
+      <button class="filtro" type="button" data-filtro="produto" aria-pressed="false">Produtos</button>
+    </div>
+
+    <p class="mensagem-filtro" id="mensagem-filtro" hidden></p>
+    <div class="lista-servicos" id="lista-servicos"></div>
+
+    <section class="bloco-extra" aria-labelledby="titulo-passeio">
+      <h2 id="titulo-passeio">Rotina e bem-estar</h2>
+      <p class="intro">
+        Além do atendimento na loja, orientamos tutores sobre passeios, hidratação e
+        brincadeiras que reforçam o vínculo com o pet.
+      </p>
+      <img src="imagens/passeio.webp" width="800" height="534" loading="lazy"
+        alt="Pessoa passeando com dois cães em área aberta">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rodape-interno">
+      <div class="rodape-info">
+        <p>&copy; 2026 Daniel Dias Wolff · Pet Shop Amigo Fiel</p>
+        <p>Última atualização: 3 de agosto de 2026</p>
+      </div>
+      <p><a href="referencias.html" target="_blank" rel="noopener noreferrer">Referências de imagens e textos</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
