@@ -258,7 +258,7 @@ main {
 
 .botao {
   display: inline-block;
-  background: var(--cor-destaque);
+  background: #8a5818;
   color: var(--cor-clara);
   font-family: var(--fonte-corpo);
   font-weight: 700;
@@ -272,7 +272,7 @@ main {
 
 .botao:hover,
 .botao:focus-visible {
-  background: var(--cor-destaque-escuro);
+  background: #6e4512;
   color: var(--cor-clara);
   transform: translateY(-2px);
 }
